@@ -8,11 +8,9 @@ import { ProductComponent } from './components/product.component';
 import { CartComponent } from './cart/cart.component';
 import { ExponentialPipe } from '../app/pipes/exponential/exponential.pipe';
 import { HighlightDirective } from "./highlight.directive";
-import { HomeComponent } from "../app/home/home.component";
 import { ProductsComponent } from "../app/products/products.component";
 import { ContactComponent } from "../app/contact/contact.component";
 import { DemoComponent } from "../app/demo/demo.component";
-import { BannerComponent } from "./banner/banner.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
@@ -25,11 +23,9 @@ import { LayoutComponent } from "./layout/layout.component";
     CartComponent,
     ExponentialPipe,
     HighlightDirective,
-    HomeComponent,
     ProductsComponent,
     ContactComponent,
     DemoComponent,
-    BannerComponent,
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent,

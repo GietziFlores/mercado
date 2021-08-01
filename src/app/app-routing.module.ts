@@ -10,26 +10,31 @@ import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'', 
     component: LayoutComponent ,
-    redirectTo: '/home',
-    pathMatch:'full'
-  },
-  {
-    path:'home',
-    component: HomeComponent
-  },
-  {
-    path:'products',
-    component: ProductsComponent
-  },
-  {
-    path:'products/:id',
-    component: ProductDetailComponent
-  },
-  {
-    path:'contact',
-    component: ContactComponent
+    children:[
+      {   
+        path:'',
+        redirectTo: '/home',
+        pathMatch:'full',
+      },
+      {
+        path:'home',
+        component: HomeComponent
+      },
+      {
+        path:'products',
+        component: ProductsComponent
+      },
+      {
+        path:'products/:id',
+        component: ProductDetailComponent
+      },
+      {
+        path:'contact',
+        component: ContactComponent
+      }
+    ]
   },
   {
     path:'demo',
