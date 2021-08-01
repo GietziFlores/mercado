@@ -7,7 +7,7 @@ import { DemoComponent } from "./demo/demo.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { LayoutComponent } from './layout/layout.component';
-
+import {  } from './home/home.component';
 const routes: Routes = [
   {
     path:'', 
