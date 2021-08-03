@@ -7,29 +7,34 @@ import { DemoComponent } from "./demo/demo.component";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { LayoutComponent } from './layout/layout.component';
-
+import {  } from './home/home.component';
 const routes: Routes = [
   {
-    path:'',
+    path:'', 
     component: LayoutComponent ,
-    redirectTo: '/home',
-    pathMatch:'full'
-  },
-  {
-    path:'home',
-    component: HomeComponent
-  },
-  {
-    path:'products',
-    component: ProductsComponent
-  },
-  {
-    path:'products/:id',
-    component: ProductDetailComponent
-  },
-  {
-    path:'contact',
-    component: ContactComponent
+    children:[
+      {   
+        path:'',
+        redirectTo: '/home',
+        pathMatch:'full',
+      },
+      {
+        path:'home',
+        component: HomeComponent
+      },
+      {
+        path:'products',
+        component: ProductsComponent
+      },
+      {
+        path:'products/:id',
+        component: ProductDetailComponent
+      },
+      {
+        path:'contact',
+        component: ContactComponent
+      }
+    ]
   },
   {
     path:'demo',

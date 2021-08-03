@@ -1,5 +1,6 @@
 import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/core';
 import { Swiper } from "swiper";
+import { BannerComponent } from "./banner/banner.component";
 
 
 @Component({
